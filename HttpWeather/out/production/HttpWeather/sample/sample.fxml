@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea fx:id="textArea" layoutX="16.0" layoutY="50.0" prefHeight="336.0" prefWidth="344.0" />
+      <TextField fx:id="urlField" layoutX="146.0" layoutY="14.0" prefHeight="25.0" prefWidth="442.0" />
+      <MenuButton fx:id="menu" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="MenuButton">
+         <items>
+          <MenuItem fx:id="Nigata" mnemonicParsing="false" onAction="#Nigata_Action" text="Nigata" />
+            <MenuItem fx:id="Toyama" mnemonicParsing="false" onAction="#Toyama_Action" text="Toyama" />
+            <MenuItem fx:id="Isikawa" mnemonicParsing="false" onAction="#Isikawa_Action" text="Isikawa" />
+          <MenuItem fx:id="Hukui" mnemonicParsing="false" onAction="#Hukui_Action" text="Hukui" />
+         </items>
+      </MenuButton>
+      <WebView fx:id="webView" layoutX="371.0" layoutY="50.0" prefHeight="336.0" prefWidth="212.0" />
+   </children>
+</AnchorPane>
